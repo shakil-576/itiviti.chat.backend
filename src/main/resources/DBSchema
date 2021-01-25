@@ -1,0 +1,28 @@
+
+Below are the DB Schema
+
+CHAT_ROOMS -> {
+    chatRoomId : string // Primary Key
+    participants : List<User>
+}
+USERS -> {
+    userName : string //Primary Key
+    name : string
+    lastLoginTime : Date
+}
+MESSAGES -> {
+    chatRoomId : string //from CHAT_ROOM collection
+    messageId : string  // Unique Message Identifier   -- Primary Key
+    content: string     //Actual Text Msg
+    sentBy : string     //message sent from
+    sentTo: string      //message sent to
+}
+
+Swagger ui - http://localhost:8080/swagger-ui/
+
+Below are the UsersList
+shifa
+shakil
+simran
+najma
+salma
